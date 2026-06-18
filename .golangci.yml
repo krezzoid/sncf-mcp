@@ -1,0 +1,20 @@
+# golangci-lint configuration. Keep the linter set tight and meaningful rather
+# than maximal: every enabled linter should catch something we actually care
+# about. Run locally with: golangci-lint run
+version: "2"
+
+linters:
+  enable:
+    - errcheck      # unchecked errors
+    - govet         # suspicious constructs
+    - ineffassign   # ineffectual assignments
+    - staticcheck   # broad correctness/style analysis
+    - unused        # unused code
+    - misspell      # typos in comments/strings
+    - revive        # style; replacement for golint
+    - bodyclose     # http response bodies must be closed
+    - gosec         # security issues
+
+issues:
+  max-issues-per-linter: 0
+  max-same-issues: 0

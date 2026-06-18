@@ -1,0 +1,42 @@
+{
+  "disruptions": [
+    {
+      "id": "ce810b50-1111-4c2a-9f0e-aaaaaaaaaaaa",
+      "status": "active",
+      "cause": "travaux",
+      "severity": {
+        "name": "perturbation",
+        "effect": "SIGNIFICANT_DELAYS",
+        "color": "#FF6600",
+        "priority": 30
+      },
+      "application_periods": [
+        { "begin": "20260618T000000", "end": "20260618T235959" }
+      ],
+      "messages": [
+        {
+          "text": "Travaux sur la ligne : des retards sont à prévoir entre Lyon et Valence.",
+          "channel": { "name": "web", "types": ["web", "mobile"] }
+        }
+      ]
+    },
+    {
+      "id": "ce810b50-2222-4c2a-9f0e-bbbbbbbbbbbb",
+      "status": "active",
+      "severity": {
+        "name": "blocage",
+        "effect": "NO_SERVICE",
+        "priority": 40
+      },
+      "application_periods": [
+        { "begin": "20260618T060000", "end": "20260618T100000" }
+      ],
+      "messages": [
+        {
+          "text": "Mouvement social : trafic interrompu sur l'axe Marseille - Nice.",
+          "channel": { "name": "web" }
+        }
+      ]
+    }
+  ]
+}

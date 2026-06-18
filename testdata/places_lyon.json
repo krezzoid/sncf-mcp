@@ -1,0 +1,45 @@
+{
+  "places": [
+    {
+      "id": "stop_area:SNCF:87723197",
+      "name": "Lyon Part-Dieu (Lyon)",
+      "embedded_type": "stop_area",
+      "quality": 90,
+      "stop_area": {
+        "id": "stop_area:SNCF:87723197",
+        "name": "Lyon Part-Dieu",
+        "label": "Lyon Part-Dieu (Lyon)",
+        "coord": { "lat": "45.760393", "lon": "4.859399" },
+        "administrative_regions": [
+          { "id": "admin:fr:69123", "name": "Lyon", "level": 8, "zip_code": "69000;69009" }
+        ]
+      }
+    },
+    {
+      "id": "stop_area:SNCF:87722025",
+      "name": "Lyon Perrache (Lyon)",
+      "embedded_type": "stop_area",
+      "quality": 70,
+      "stop_area": {
+        "id": "stop_area:SNCF:87722025",
+        "name": "Lyon Perrache",
+        "label": "Lyon Perrache (Lyon)",
+        "coord": { "lat": "45.749828", "lon": "4.826271" }
+      }
+    },
+    {
+      "id": "admin:fr:69123",
+      "name": "Lyon (69000-69009)",
+      "embedded_type": "administrative_region",
+      "quality": 95,
+      "administrative_region": { "id": "admin:fr:69123", "name": "Lyon", "level": 8, "zip_code": "69000;69009" }
+    },
+    {
+      "id": "addr:4.85913;45.76032",
+      "name": "Rue de Lyon (Paris)",
+      "embedded_type": "address",
+      "quality": 40,
+      "address": { "id": "addr:4.85913;45.76032", "name": "Rue de Lyon", "house_number": 0 }
+    }
+  ]
+}

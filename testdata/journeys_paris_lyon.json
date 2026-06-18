@@ -1,0 +1,149 @@
+{
+  "context": {
+    "current_datetime": "20260619T101500",
+    "timezone": "Europe/Paris",
+    "car_direct_path": { "co2_emission": { "value": 78000.0, "unit": "gEC" } }
+  },
+  "feed_publishers": [
+    {
+      "id": "sncf",
+      "name": "SNCF",
+      "license": "Private",
+      "url": "https://www.digital.sncf.com/startup/api"
+    }
+  ],
+  "links": [
+    { "href": "https://api.sncf.com/v1/coverage/sncf/journeys?from=stop_area%3ASNCF%3A87686006&to=stop_area%3ASNCF%3A87723197", "type": "first", "templated": false },
+    { "href": "https://api.sncf.com/v1/coverage/sncf/journeys?from=stop_area%3ASNCF%3A87686006&to=stop_area%3ASNCF%3A87723197&datetime=20260620T160000", "type": "next", "templated": false },
+    { "href": "https://api.sncf.com/v1/coverage/sncf/vehicle_journeys/{vehicle_journeys.id}", "type": "vehicle_journeys", "templated": true }
+  ],
+  "tickets": [],
+  "journeys": [
+    {
+      "type": "best",
+      "status": "",
+      "tags": ["walking", "ecologic"],
+      "requested_date_time": "20260620T133000",
+      "duration": 6960,
+      "nb_transfers": 0,
+      "departure_date_time": "20260620T140000",
+      "arrival_date_time": "20260620T155600",
+      "co2_emission": { "value": 2380.0, "unit": "gEC" },
+      "durations": { "total": 6960, "walking": 0, "bike": 0, "car": 0, "ridesharing": 0, "taxi": 0 },
+      "distances": { "walking": 0, "bike": 0, "car": 0, "ridesharing": 0, "taxi": 0 },
+      "fare": { "found": false, "total": { "value": "0.0" }, "links": [] },
+      "links": [],
+      "sections": [
+        {
+          "id": "section_0_0",
+          "type": "public_transport",
+          "duration": 6960,
+          "co2_emission": { "value": 2380.0, "unit": "gEC" },
+          "departure_date_time": "20260620T140000",
+          "arrival_date_time": "20260620T155600",
+          "from": { "id": "stop_area:SNCF:87686006", "name": "Paris Gare de Lyon", "embedded_type": "stop_area" },
+          "to": { "id": "stop_area:SNCF:87723197", "name": "Lyon Part Dieu", "embedded_type": "stop_area" },
+          "display_informations": {
+            "commercial_mode": "TGV INOUI",
+            "physical_mode": "Train grande vitesse",
+            "network": "SNCF",
+            "headsign": "6607",
+            "direction": "Lyon Part Dieu (Lyon)",
+            "label": "TGV INOUI",
+            "color": "000000",
+            "text_color": "FFFFFF",
+            "code": "6607"
+          },
+          "geojson": {
+            "type": "LineString",
+            "coordinates": [[2.373481, 48.844922], [3.108683, 47.316218], [4.802002, 46.295013], [4.859399, 45.760393]]
+          },
+          "additional_informations": [],
+          "links": [{ "type": "vehicle_journey", "id": "vehicle_journey:SNCF:2026-06-20:6607:1187:Train" }],
+          "stop_date_times": [
+            { "departure_date_time": "20260620T140000", "arrival_date_time": "20260620T140000", "stop_point": { "id": "stop_point:SNCF:87686006:Train", "name": "Paris Gare de Lyon" } },
+            { "departure_date_time": "20260620T145900", "arrival_date_time": "20260620T145700", "stop_point": { "id": "stop_point:SNCF:87683599:Train", "name": "Le Creusot Montceau Montchanin" } },
+            { "departure_date_time": "20260620T155600", "arrival_date_time": "20260620T155600", "stop_point": { "id": "stop_point:SNCF:87723197:Train", "name": "Lyon Part Dieu" } }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "comfort",
+      "tags": ["comfort"],
+      "duration": 8100,
+      "nb_transfers": 1,
+      "departure_date_time": "20260620T143000",
+      "arrival_date_time": "20260620T164500",
+      "co2_emission": { "value": 2900.0, "unit": "gEC" },
+      "durations": { "total": 8100, "walking": 600, "bike": 0, "car": 0 },
+      "fare": { "found": false, "total": { "value": "0.0" }, "links": [] },
+      "links": [],
+      "sections": [
+        {
+          "id": "section_1_0",
+          "type": "public_transport",
+          "duration": 5400,
+          "co2_emission": { "value": 1850.0, "unit": "gEC" },
+          "departure_date_time": "20260620T143000",
+          "arrival_date_time": "20260620T160000",
+          "from": { "id": "stop_area:SNCF:87686006", "name": "Paris Gare de Lyon", "embedded_type": "stop_area" },
+          "to": { "id": "stop_area:SNCF:87722025", "name": "Macon Loche TGV", "embedded_type": "stop_area" },
+          "display_informations": {
+            "commercial_mode": "TGV INOUI",
+            "physical_mode": "Train grande vitesse",
+            "network": "SNCF",
+            "headsign": "6691",
+            "direction": "Montpellier (Montpellier)",
+            "label": "TGV INOUI"
+          },
+          "geojson": {
+            "type": "LineString",
+            "coordinates": [[2.373481, 48.844922], [4.802002, 46.295013]]
+          },
+          "stop_date_times": [
+            { "departure_date_time": "20260620T143000", "stop_point": { "id": "stop_point:SNCF:87686006:Train", "name": "Paris Gare de Lyon" } },
+            { "arrival_date_time": "20260620T160000", "stop_point": { "id": "stop_point:SNCF:87722025:Train", "name": "Macon Loche TGV" } }
+          ]
+        },
+        {
+          "id": "section_1_1",
+          "type": "transfer",
+          "transfer_type": "walking",
+          "duration": 600,
+          "departure_date_time": "20260620T160000",
+          "arrival_date_time": "20260620T161000",
+          "geojson": {
+            "type": "LineString",
+            "coordinates": [[4.802002, 46.295013], [4.803100, 46.296200]]
+          }
+        },
+        {
+          "id": "section_1_2",
+          "type": "public_transport",
+          "duration": 1500,
+          "co2_emission": { "value": 1050.0, "unit": "gEC" },
+          "departure_date_time": "20260620T162000",
+          "arrival_date_time": "20260620T164500",
+          "from": { "id": "stop_area:SNCF:87722025", "name": "Macon Loche TGV", "embedded_type": "stop_area" },
+          "to": { "id": "stop_area:SNCF:87723197", "name": "Lyon Part Dieu", "embedded_type": "stop_area" },
+          "display_informations": {
+            "commercial_mode": "TER",
+            "physical_mode": "Train regional / TER",
+            "network": "SNCF",
+            "headsign": "17645",
+            "direction": "Lyon Part Dieu (Lyon)",
+            "label": "TER"
+          },
+          "geojson": {
+            "type": "LineString",
+            "coordinates": [[4.802002, 46.295013], [4.859399, 45.760393]]
+          }
+        }
+      ]
+    }
+  ],
+  "disruptions": [],
+  "notes": [],
+  "exceptions": []
+}

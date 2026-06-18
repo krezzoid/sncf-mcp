@@ -1,0 +1,17 @@
+# Binaries
+/sncf-mcp
+/dist/
+*.exe
+
+# Test & coverage artifacts
+*.out
+coverage.*
+
+# Local environment
+.env
+*.local
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/

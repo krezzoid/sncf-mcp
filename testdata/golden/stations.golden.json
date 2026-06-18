@@ -1,0 +1,12 @@
+[
+  {
+    "id": "stop_area:SNCF:87723197",
+    "name": "Lyon Part-Dieu (Lyon)",
+    "quality": 90
+  },
+  {
+    "id": "stop_area:SNCF:87722025",
+    "name": "Lyon Perrache (Lyon)",
+    "quality": 70
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "status": "active",
+    "severity": "perturbation",
+    "effect": "SIGNIFICANT_DELAYS",
+    "message": "Travaux sur la ligne : des retards sont à prévoir entre Lyon et Valence."
+  },
+  {
+    "status": "active",
+    "severity": "blocage",
+    "effect": "NO_SERVICE",
+    "message": "Mouvement social : trafic interrompu sur l'axe Marseille - Nice."
+  }
+]

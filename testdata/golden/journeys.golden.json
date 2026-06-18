@@ -1,0 +1,42 @@
+[
+  {
+    "departure": "2026-06-20T14:00:00+02:00",
+    "arrival": "2026-06-20T15:56:00+02:00",
+    "duration_minutes": 116,
+    "transfers": 0,
+    "legs": [
+      {
+        "mode": "TGV INOUI",
+        "train": "6607",
+        "from": "Paris Gare de Lyon",
+        "to": "Lyon Part Dieu",
+        "departure": "2026-06-20T14:00:00+02:00",
+        "arrival": "2026-06-20T15:56:00+02:00"
+      }
+    ]
+  },
+  {
+    "departure": "2026-06-20T14:30:00+02:00",
+    "arrival": "2026-06-20T16:45:00+02:00",
+    "duration_minutes": 135,
+    "transfers": 1,
+    "legs": [
+      {
+        "mode": "TGV INOUI",
+        "train": "6691",
+        "from": "Paris Gare de Lyon",
+        "to": "Macon Loche TGV",
+        "departure": "2026-06-20T14:30:00+02:00",
+        "arrival": "2026-06-20T16:00:00+02:00"
+      },
+      {
+        "mode": "TER",
+        "train": "17645",
+        "from": "Macon Loche TGV",
+        "to": "Lyon Part Dieu",
+        "departure": "2026-06-20T16:20:00+02:00",
+        "arrival": "2026-06-20T16:45:00+02:00"
+      }
+    ]
+  }
+]

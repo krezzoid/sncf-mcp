@@ -1,0 +1,46 @@
+{
+  "departures": [
+    {
+      "display_informations": {
+        "commercial_mode": "TER",
+        "physical_mode": "Train régional / TER",
+        "network": "SNCF",
+        "direction": "Lyon Perrache (Lyon)",
+        "headsign": "96521",
+        "label": "TER"
+      },
+      "stop_date_time": {
+        "departure_date_time": "20260618T143300",
+        "base_departure_date_time": "20260618T143000",
+        "arrival_date_time": "20260618T143300",
+        "base_arrival_date_time": "20260618T143000",
+        "data_freshness": "realtime"
+      },
+      "stop_point": {
+        "id": "stop_point:SNCF:87723197:Train",
+        "name": "Lyon Part-Dieu"
+      }
+    },
+    {
+      "display_informations": {
+        "commercial_mode": "TGV INOUI",
+        "physical_mode": "Train grande vitesse",
+        "network": "SNCF",
+        "direction": "Paris Gare de Lyon (Paris)",
+        "headsign": "6612",
+        "label": "TGV INOUI"
+      },
+      "stop_date_time": {
+        "departure_date_time": "20260618T150000",
+        "base_departure_date_time": "20260618T150000",
+        "arrival_date_time": "20260618T150000",
+        "base_arrival_date_time": "20260618T150000",
+        "data_freshness": "base_schedule"
+      },
+      "stop_point": {
+        "id": "stop_point:SNCF:87686006:Train",
+        "name": "Lyon Part-Dieu"
+      }
+    }
+  ]
+}

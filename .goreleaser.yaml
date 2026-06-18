@@ -1,0 +1,43 @@
+# GoReleaser configuration. Produces cross-platform binaries and checksums on
+# every tagged release. Run `goreleaser release --clean` from CI on a tag.
+version: 2
+
+# Pin the artifact/project name; otherwise GoReleaser derives it from the repo
+# directory (e.g. "sncf-mcp-private").
+project_name: sncf-mcp
+
+before:
+  hooks:
+    - go mod tidy
+
+builds:
+  - id: sncf-mcp
+    main: ./cmd/sncf-mcp
+    binary: sncf-mcp
+    env:
+      - CGO_ENABLED=0
+    flags:
+      - -trimpath
+    ldflags:
+      - -s -w
+      - -X github.com/krezzoid/sncf-mcp/internal/server.Version={{ .Version }}
+    goos:
+      - linux
+      - darwin
+      - windows
+    goarch:
+      - amd64
+      - arm64
+
+archives:
+  - formats: [tar.gz]
+    name_template: "{{ .ProjectName }}_{{ .Os }}_{{ .Arch }}"
+    format_overrides:
+      - goos: windows
+        formats: [zip]
+
+checksum:
+  name_template: "checksums.txt"
+
+changelog:
+  use: github

@@ -1,0 +1,20 @@
+[
+  {
+    "direction": "Lyon Perrache (Lyon)",
+    "mode": "TER",
+    "train": "96521",
+    "scheduled": "2026-06-18T14:30:00+02:00",
+    "expected": "2026-06-18T14:33:00+02:00",
+    "delay_minutes": 3,
+    "realtime": true
+  },
+  {
+    "direction": "Paris Gare de Lyon (Paris)",
+    "mode": "TGV INOUI",
+    "train": "6612",
+    "scheduled": "2026-06-18T15:00:00+02:00",
+    "expected": "2026-06-18T15:00:00+02:00",
+    "delay_minutes": 0,
+    "realtime": false
+  }
+]
