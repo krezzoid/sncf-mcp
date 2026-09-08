@@ -1,3 +1,7 @@
+[![Listed in france-mcp-servers](https://img.shields.io/badge/listed%20in-france--mcp--servers-blue)](https://github.com/bsab/france-mcp-servers)
+
+---
+
 # sncf-mcp
 
 A [Model Context Protocol](https://modelcontextprotocol.io/) server that gives
